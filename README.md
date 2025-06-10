@@ -12,6 +12,7 @@ Please modify the following code to connect the ESP8266 to your Wi-Fi and send s
 const char* ssid = “your WiFi name”;
 const char* password = “your WiFi password”;
 const char* serverName = “http://Your computer IP:3000/update-data”;
+```
 
 ---
 
@@ -80,5 +81,3 @@ Feel free to submit issues or pull requests to improve this project.
 ## Notes
 
 * If using multiple devices, you can distinguish the sensor source using the `deviceId` field.
-
-Translated with DeepL.com (free version)
