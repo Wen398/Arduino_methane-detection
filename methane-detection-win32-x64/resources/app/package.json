@@ -1,0 +1,28 @@
+{
+  "name": "methane-detection",
+  "version": "1.0.0",
+  "description": "Arduino Methane Detection Live Chart",
+  "author": "Bryan",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . methane-detection --platform=win32 --arch=x64 --out=release-builds --overwrite",
+    "postinstall": "mkdir output || true"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.3",
+    "chartjs-adapter-date-fns": "^3.0.0",
+    "csv-writer": "^1.6.0",
+    "koa": "^2.15.3",
+    "koa-bodyparser": "^4.4.1",
+    "koa-router": "^12.0.1",
+    "koa-static": "^5.0.0",
+    "koa2-cors": "^2.0.6",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5"
+  },
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-packager": "^17.1.2"
+  }
+}

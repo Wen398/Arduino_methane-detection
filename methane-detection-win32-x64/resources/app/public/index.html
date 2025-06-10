@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Chart</title>
+    <link rel="stylesheet" href="style.css?v=1.0">
+</head>
+<body>
+    <div class="container">
+        <div class="controls">
+            <button id="downloadBtn">Download Data</button>
+        </div>
+        <div id="charts-container"></div>
+    </div>
+
+    <!-- 使用本地提供的 Socket.io 和 Chart.js -->
+    <script src="../node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="../node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="../node_modules/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+
+    <!-- 加載本地腳本 -->
+    <script src="script.js?v=1.0"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+# Node modules
+node_modules/
+
+# Output CSV and logs
+output/
+*.csv
+
+# Electron build artifacts
+dist/
+build/
+*.exe
+
+# VS Code settings
+.vscode/
+
+# OS/system files
+.DS_Store
+Thumbs.db
+
+release-builds/
