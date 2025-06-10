@@ -20,7 +20,7 @@ const char* serverName = “http://Your computer IP:3000/update-data”;
 
 ### Method 1: Directly Run the Desktop Application
 
-1. Go to `Releases` to download the packaged `.exe` file (the icon is an atom icon)
+1. Go to `methane-detection-win32-x64` to download the packaged `.exe` file (the icon is an atom icon)
 2. Run the `.exe` file, which will automatically start the server and open the frontend webpage
 3. All received data will be displayed on the frontend and stored in `output/data.csv`
 
