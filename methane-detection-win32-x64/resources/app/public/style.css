@@ -18,8 +18,8 @@ body {
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px; /* 添加一些間距在頁面頂部 */
-  margin-bottom: 20px; /* 添加間距在頁面底部以便於滾動 */
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .controls {

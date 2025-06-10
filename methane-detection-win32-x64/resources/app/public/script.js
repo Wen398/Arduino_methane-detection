@@ -1,8 +1,8 @@
-// 定义 DOM 元素引用
+// Defining DOM element references
 const downloadBtn = document.getElementById('downloadBtn');
 const chartsContainer = document.getElementById('charts-container');
 
-// 图表通用配置
+// Chart General Configuration
 const chartOptions = {
     scales: {
         x: {
@@ -27,10 +27,9 @@ const chartOptions = {
     maintainAspectRatio: false
 };
 
-// 使用明确定义的 localhost 地址连接 Socket.IO
 const socket = io('http://localhost:3000');
 
-// 存储每个设备的图表实例和div
+// Stores chart instances and divs for each device
 let deviceCharts = {};
 
 socket.on('data', (packet) => {
@@ -64,7 +63,7 @@ socket.on('data', (packet) => {
         });
     }
 
-    // 更新数据并重新绘制图表
+    // Update data and redraw the chart
     updateData(deviceCharts[deviceId], time, methane);
 });
 
@@ -74,9 +73,9 @@ function updateData(chart, time, methane) {
     chart.update();
 }
 
-// 下载数据的功能实现
+// Download data function implementation
 downloadBtn.addEventListener('click', () => {
-    fetch('http://localhost:3000/download-csv') // 使用明确的 localhost 地址
+    fetch('http://localhost:3000/download-csv')
         .then(response => {
             if (response.ok) {
                 return response.blob();
